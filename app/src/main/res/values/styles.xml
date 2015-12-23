@@ -13,5 +13,13 @@
     </style>
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
+    <style name="TextLabel1" parent="TextAppearance.AppCompat">
+        //hint color And Label Color in False State
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        //Label color in True State And Bar Color False And True State
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
 </resources>

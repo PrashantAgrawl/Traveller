@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center_horizontal"
+    >
+
+    <!--EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:background="@drawable/custom_edit_text"/-->
+
+    <ProgressBar android:id="@+id/login_progress" style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" android:visibility="gone" />
+
+    <ScrollView android:id="@+id/login_form" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:id="@+id/email_login_form" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel1">
+
+                <EditText android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/user"
+                    android:inputType="text"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel1">
+
+                <EditText android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email_id"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel1">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel1">
+
+                <EditText
+                    android:id="@+id/confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/confirm"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel1">
+
+                <EditText android:id="@+id/mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mobile"
+                    android:inputType="phone"
+                    android:maxEms="10"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel1">
+
+                <EditText
+                    android:id="@+id/dob"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/dob1"
+                    android:inputType="date"
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:textColor="#F90089"
+                    android:textSize="20dp"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signupButton"
+                android:src="@drawable/_signup"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
